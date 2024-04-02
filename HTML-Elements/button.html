@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com/">
+        <button disabled>click me to <span style="color: red;">G</span><span style="color: green;">o</span><span style="color: rgb(255, 214, 33);">o</span><span style="color: orange;">g</span><span style="color: brown;">l</span><span style="color: rgb(119, 50, 231);">e</span></button>
+    </a>
+<br><br>
+    <button onclick="doSomething()">Click Me to perform basic JavaScript Hello & Goodbye</button>
+
+    <p id="test" style="font-size: 35px; margin-left: 100px;">Hello</p>
+
+    <Script>
+        function doSomething(){
+            document.getElementById("test").innerHTML = "Goodbye";
+        }
+    </Script>
+
+</body>
+</html>

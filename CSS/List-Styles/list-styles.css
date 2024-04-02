@@ -1,0 +1,34 @@
+body {
+    padding: 5% 10%;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* if the font-family name has space should put ''  */
+}
+
+ol {
+    list-style-type: lower-alpha;
+    padding: 10; /* list is still indented for default */
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    color: blue;
+    list-style-position: inside; /* inside to make the bullet follow the text position - outside is default and won't follow the text when placed to center*/
+    line-height: 1.6; /*
+    list-style-image: url("Img/meerkat.avif");
+    border-image-width: 3;
+    list-style: square url("Img/meerkat.avif") center;this override the img that became the bullet | now the square is the fall back incase the img won't work and we got the img style & position in place in list-style properties*/ 
+}
+
+ul li:nth-child(2) { /* also accept an odd or even number (odd) (even)*/
+    color: red;
+}
+
+ul ::marker { /* this only affects the bullet - u can also make it lilke this ul li::marker - this will lead to the same result  */
+    color: green;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "$$$>> " ;
+
+}
+

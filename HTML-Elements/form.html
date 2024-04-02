@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--for the submit button will add put the structure for php page-->
+    <!--two common methods GET & POST, GET is considered insecure, 
+        get will show the data to the end of url inputted, if passwords do not use get
+        Use POST to submit some secure information 
+    --> 
+    
+    <form action="action_page.php" method="post">
+
+        <div>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="clientFirstName" placeholder="Juan" required> <!--required attribute is required the input to be filled-->
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="clientLastName" placeholder="Americana" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="pass" name="password" placeholder="Password" maxlength="15" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="password" placeholder="email@gmail.com" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">Phone #: </label>
+            <input type="tel" id="phone#" name="phone" placeholder="Phone #" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="bdate">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="title">Title</label>
+
+            <br>
+            
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="Mrs.">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name="PhD.">
+
+        </div>
+
+        <br>
+
+        <div>
+            <label for="paymnt">Payment: </label>
+            <select name="Payment" id="payment">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="giftcard">Giftcard</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="subscribe">Subscribe</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+        </div>
+
+        <!--in form there are built in bottons to, reset and submit function-->
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+</body>
+</html>

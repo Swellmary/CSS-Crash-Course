@@ -1,0 +1,32 @@
+body {
+    padding: 10%;
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* if the font-family name has space should put ''  */
+}
+
+/* main {
+    opacity: 0.5;
+} */
+
+/* should be in order exactly like this  */
+a {
+    text-decoration: none;
+    cursor: pointer; /*not-allowed*/
+    color: rgb(2, 88, 158);
+}
+
+a:visited { /* pseodo class */
+    color: purple;
+}
+
+a:hover, a:focus { /* focus provide outline on the tabbed features */
+    color: rgb(6, 77, 132, 0.5);
+    background-color: gold;
+/*     opacity: 0.5; */
+}
+
+a:active {
+    color: red;
+}
+
+

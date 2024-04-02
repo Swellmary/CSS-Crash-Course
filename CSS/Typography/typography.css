@@ -1,0 +1,23 @@
+/* https://fonts.google.com/ - outsource font-family (add link above css link) then replace the font family with what google suggested code*/ 
+/* grab less font link to for less load, you can also just import it */
+body {
+    padding: 10%;
+    font-size: 0.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* if the font-family name has space should put ''  */
+}
+
+/* input, button {
+    font-size: inherit;
+} */
+
+p {
+/*     text-decoration: underline; */ /*if none the link line will be removed  */
+/*     text-transform: lowercase; */
+    text-align: justify; /*justify will make the end uniform in the same place*/
+    text-indent: 2em;
+    line-height: 1.5; /*not all starts with text or font this could be the first of the property/value / 1.2 is default*/
+    letter-spacing: 0.1em;
+    word-spacing: 0.25em;
+    font-weight: normal;
+/*     font-style: italic; */
+}

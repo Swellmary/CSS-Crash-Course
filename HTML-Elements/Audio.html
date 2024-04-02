@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Audio or Video</title>
+    </head>
+    <body>
+        <audio controls src="Sasha Alex Sloan - As It Was (Lyrics).mp4">You know it's not the same as it was</audio>
+        <br>
+        <video id="myVideo" height="500px;" controls autoplay loop muted src="You Are My Hiding Place ( With Lyrics ) _ Selah.mp4">as it was</video>
+        <iframe id="myVideo" src="https://www.youtube.com/watch?v=9WfWnkVLwao&list=PLLgnExjKCL1ys-M0x0Jx0BKl8R6Erujqo&index=12&ab_channel=LadyGaga-Topic" frameborder="200"></iframe>
+        <video controls>
+            <source src="Sasha Alex Sloan - As It Was (Lyrics).mp4">
+            <source src="Sasha Alex Sloan - As It Was (Lyrics).wav">
+            Your browser doesn't support HTML5 Audio
+        </video>
+
+        <script>
+            // Get the video element
+            var myVideo = document.getElementById("myVideo");
+          
+            // Set the time (in minutes) after which the video should stop
+            var stopTimeInMinutes = 30; // Change this value to the desired stop time in minutes
+          
+            // Convert minutes to seconds
+            var stopTimeInSeconds = stopTimeInMinutes * 60;
+          
+            // Listen for the "timeupdate" event, which is triggered as the video plays
+            myVideo.addEventListener("timeupdate", function() {
+              // Check if the current time of the video is greater than or equal to the stop time
+              if (myVideo.currentTime >= stopTimeInSeconds) {
+                // Pause the video
+                myVideo.pause();
+              }
+            });
+          </script>
+
+       <!-- <script>
+            var myVideo = document.getElementById("myVideo");
+
+            var StopTimeInMinutes = 15;
+
+            var stopTimeInSeconds = StopTimeInMinutes * 60;
+
+            myVideo/addEventListener("tuneupdate", function(){
+
+              if (myVideo.currentTime >= StopTimeInSeconds) {
+
+                myVideo.pause();
+              }
+            });
+          </script>
+           -->
+    </body>
+</html>

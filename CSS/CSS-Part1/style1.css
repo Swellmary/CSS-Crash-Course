@@ -1,0 +1,97 @@
+/**/
+/*jigsaw.w3.org/css-validator/#validate_by_upload*/
+
+/**/
+/*
+* {
+    border: 1px solid red;
+}
+
+#this does not include the title just the body
+main {
+
+}
+
+html {
+
+}
+*/
+
+/*body is selector*/
+/*font-size is property*/
+/*22px is property value*/
+/*the body properties will inherit all the elements inside*/
+/*Ruleset is all the group components created ex. body*/
+
+body {
+    min-height: 100vh; /* if body is not the full height of the page but you want to make it full height, but u don't want to use just height cuz it will also just limit the body of the page to just 100vh instead use min-height property*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+
+main {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    border: 2px dashed red;
+    font-size: 1rem;
+    margin: 2em;
+}
+
+/* the measurement is from top, right and bottom. But if there's only 2 number this means the top-bottom and left-right
+h1 {
+    margin: 2em 2em 2em;
+} */
+
+/*h1, h2 is Group selector - meaning this 2 element will be affected on the update*/
+h1, h2 {
+    color: green;
+}
+
+p {
+    color: purple;
+}
+
+/* class highlight is better #css is looking for the span that is inside p(aragraph)
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+} */
+
+/*this is much more organize - within the all the element id*/
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+.gray {
+    color: gray;
+}
+
+#second {
+    font-style: italic;
+}
+
+.Article {
+    border: 10px double red; /*outset mas cute mura rag solid*/
+    outline: 3px solid green;
+    outline-offset: 4px;
+    margin: 2em;
+    font-size: 1rem;
+}
+h2 {
+    color: blueviolet;
+}
+
