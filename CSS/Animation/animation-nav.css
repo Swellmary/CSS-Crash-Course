@@ -32,8 +32,8 @@ header {
 }
 
 .menu-button {
-    background-color: transparent;
-    border: none;
+    background-color: transparent;  /* unwanted background color pwede ra bg transparent */
+    border: none; /* mawala ang default border */
     width: 48px;
     height: 48px;
     display: flex;
