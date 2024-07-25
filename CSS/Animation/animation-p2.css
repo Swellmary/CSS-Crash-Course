@@ -32,4 +32,58 @@ header {
     justify-content: space-between;
 }
 
+.menu-button {
+    background-color: transparent;
+    border: none;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: var(--HEADER-COLOR);
+}
+
+.menu-icon, 
+.menu-icon::before, 
+.menu-icon::after {
+    background-color: var(--HEADER-COLOR);
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.menu-icon::after, 
+.menu-icon::before {
+    content: "";
+}
+
+.menu-icon::before {
+    transform: translate(-20px, -12px);
+}
+
+.menu-icon::after {
+    transform: translate(-20px, 12px);
+}
+
+nav {
+    background-color: var(--HEADER-BGCOLOR);
+    display: none;
+    transform-origin: top center;
+    animation: showMenu 0.5s ease-out forwards;
+}
+
+is:(header:hover, header:focus-within) .menu-icon {
+    background-color: transparent;
+    transform: rotate(720deg);
+}
+
+
+@keyframes showMenu {
+    0% {
+        transform: scaleY(0);
+    }
+}
 
