@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --HEADER-BGCOLOR: #333;
+    --HEADER-COLOR: whitesmoke;
+}
+
+
+html {
+    font-size: 1.3rem;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header {
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+}
+
+.header-title-line {
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
