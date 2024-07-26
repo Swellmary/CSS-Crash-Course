@@ -8,7 +8,7 @@
     --HEADER-BGCOLOR: #333;
     --HEADER-COLOR: whitesmoke;
 }
-
+ 
 
 html {
     font-size: 1.3rem;
@@ -68,13 +68,6 @@ header {
     transform: translate(-20px, 12px);
 }
 
-nav {
-    background-color: var(--HEADER-BGCOLOR);
-    display: none;
-    transform-origin: top center;
-    animation: showMenu 0.5s ease-out forwards;
-}
-
 :is(header:hover, header:focus-within) .menu-icon {
     background-color: transparent;
     transform: rotate(720deg);
@@ -90,12 +83,23 @@ nav {
     display: block;
 }
 
-
+nav {
+    background-color: var(--HEADER-BGCOLOR);
+    display: none;
+    transform-origin: top center;
+    animation: showMenu 0.5s ease-out forwards;
+}
 
 @keyframes showMenu {
     0% {
         transform: scaleY(0);
     }
-    
+    80% {
+        transform: scaleY(1.2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
+
 
